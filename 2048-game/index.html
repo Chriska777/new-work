@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2048</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>2048</h1>
+      <div class="scores">
+        <div class="score-box">
+          <span class="label">分数</span>
+          <span class="value" id="score">0</span>
+        </div>
+        <div class="score-box">
+          <span class="label">最高</span>
+          <span class="value" id="best">0</span>
+        </div>
+      </div>
+    </div>
+    <div class="controls">
+      <button id="newGame">新游戏</button>
+      <p class="hint">方向键 / WASD 移动</p>
+    </div>
+    <div class="board" id="board">
+      <div class="grid-bg">
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+        <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+      </div>
+      <div class="tiles" id="tiles"></div>
+    </div>
+    <div class="overlay hidden" id="overlay">
+      <div class="overlay-content">
+        <h2 id="overlayTitle"></h2>
+        <p id="overlayScore"></p>
+        <button id="overlayBtn">再来一局</button>
+      </div>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
